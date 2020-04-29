@@ -5,6 +5,7 @@ const router = express.Router();
 
 router
   .route(`/`)
-  .post(yandexController.checkPayment);
+  .post(yandexController.checkPayment)
+  .get(yandexController.getMessage);
 
 module.exports = router;

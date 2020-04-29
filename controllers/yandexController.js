@@ -14,3 +14,9 @@ exports.checkPayment = async (req, res) => {
     });
   }
 };
+
+exports.getMessage = async (req, res) => {
+  res.status(200).json({
+    status: `success`,
+  });
+}
