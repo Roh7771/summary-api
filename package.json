@@ -4,7 +4,7 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "prestart": "npm i",
+    "prestart": "npm install",
     "start": "nodemon server.js"
   },
   "keywords": [],
