@@ -12,6 +12,7 @@ const app = express();
 
 app.use(cors());
 app.use(express.json());
+app.use(express.urlencoded());
 
 // 3) ROUTES
 app.use("/api/v1/messages", messageRouter);

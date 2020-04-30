@@ -2,6 +2,7 @@ const Yandex = require("./../models/yandexModel");
 
 exports.checkPayment = async (req, res) => {
   try {
+    console.log(req.body);
     await Yandex.create({email: req.body.email || 'lol'});
 
     res.status(200).json({
